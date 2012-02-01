@@ -346,10 +346,6 @@
 		A037D201141510EB0091B5C7 /* vec2.c in Sources */ = {isa = PBXBuildFile; fileRef = A037D1E6141510EB0091B5C7 /* vec2.c */; };
 		A037D202141510EB0091B5C7 /* vec3.c in Sources */ = {isa = PBXBuildFile; fileRef = A037D1E7141510EB0091B5C7 /* vec3.c */; };
 		A037D203141510EB0091B5C7 /* vec4.c in Sources */ = {isa = PBXBuildFile; fileRef = A037D1E8141510EB0091B5C7 /* vec4.c */; };
-		A0AE161B14151568009AA391 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AE161A14151568009AA391 /* RootViewController.m */; };
-		A0AE161C14151568009AA391 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AE161A14151568009AA391 /* RootViewController.m */; };
-		A0AE161D14151568009AA391 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AE161A14151568009AA391 /* RootViewController.m */; };
-		A0AE161E14151568009AA391 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AE161A14151568009AA391 /* RootViewController.m */; };
 		A0AE163B14151611009AA391 /* Blur.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A0AE162014151611009AA391 /* Blur.fsh */; };
 		A0AE163C14151611009AA391 /* Blur.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A0AE162014151611009AA391 /* Blur.fsh */; };
 		A0AE163D14151611009AA391 /* Blur.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A0AE162014151611009AA391 /* Blur.fsh */; };
@@ -886,8 +882,6 @@
 		A037D1E6141510EB0091B5C7 /* vec2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vec2.c; sourceTree = "<group>"; };
 		A037D1E7141510EB0091B5C7 /* vec3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vec3.c; sourceTree = "<group>"; };
 		A037D1E8141510EB0091B5C7 /* vec4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vec4.c; sourceTree = "<group>"; };
-		A0AE161914151568009AA391 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = ../RootViewController.h; sourceTree = "<group>"; };
-		A0AE161A14151568009AA391 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = ../RootViewController.m; sourceTree = "<group>"; };
 		A0AE162014151611009AA391 /* Blur.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Blur.fsh; sourceTree = "<group>"; };
 		A0AE162114151611009AA391 /* Flower.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Flower.fsh; sourceTree = "<group>"; };
 		A0AE162214151611009AA391 /* Flower.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Flower.vsh; sourceTree = "<group>"; };
@@ -1047,8 +1041,6 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				A0AE161914151568009AA391 /* RootViewController.h */,
-				A0AE161A14151568009AA391 /* RootViewController.m */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -2166,7 +2158,6 @@
 				5006BA4911BBF4DB00E488BD /* main.m in Sources */,
 				5006BA5F11BBF58600E488BD /* AppController.m in Sources */,
 				5006BA6011BBF58600E488BD /* PerformanceNodeChildrenTest.m in Sources */,
-				A0AE161D14151568009AA391 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2178,7 +2169,6 @@
 				503095C7104482EA005F7AFC /* AppController.m in Sources */,
 				503095C8104482EA005F7AFC /* CocosNodePerformance.m in Sources */,
 				503095C9104482EA005F7AFC /* MainScene.m in Sources */,
-				A0AE161B14151568009AA391 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2189,7 +2179,6 @@
 				50671B5A11B95994006C0061 /* main.m in Sources */,
 				50671A1C11B95739006C0061 /* AppController.m in Sources */,
 				50671A1E11B95739006C0061 /* MainScene.m in Sources */,
-				A0AE161C14151568009AA391 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2297,7 +2286,6 @@
 				E0B0E65711F8C4A400414246 /* AppController.m in Sources */,
 				E0B0E65811F8C4A400414246 /* PerformanceTextureTest.m in Sources */,
 				E0B0E65911F8C4C200414246 /* main.m in Sources */,
-				A0AE161E14151568009AA391 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

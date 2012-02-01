@@ -6,7 +6,18 @@
 #import "AppController.h"
 #import "cocos2d.h"
 #import "MainScene.h"
-#import "RootViewController.h"
+
+@interface RootViewController : UIViewController {
+}
+@end
+
+@implementation RootViewController
+
+-(BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+	return UIInterfaceOrientationIsLandscape(toInterfaceOrientation);
+}
+@end
 
 @implementation AppController
 
@@ -28,7 +39,7 @@
 	EAGLView *glView = [EAGLView viewWithFrame:[window_ bounds]];
 	
 	// attach the openglView to the director
-	[director setOpenGLView:glView];
+	[director setView:glView];
 	
 	// 2D projection
 	[director setProjection:kCCDirectorProjection2D];
@@ -39,13 +50,13 @@
 //		CCLOG(@"Retina Display Not supported");
 	
 	// Init the View Controller
-	viewController_ = [[RootViewController alloc] initWithNibName:nil bundle:nil];
-	viewController_.wantsFullScreenLayout = YES;
+//	viewController_ = [[RootViewController alloc] initWithNibName:nil bundle:nil];
+//	viewController_.wantsFullScreenLayout = YES;
+//	
+//	// make the OpenGLView a child of the view controller
+//	[viewController_ setView:glView];
 	
-	// make the OpenGLView a child of the view controller
-	[viewController_ setView:glView];
-	
-	navigationController_ = [[UINavigationController alloc] initWithRootViewController:viewController_];
+	UINavigationController *navigationController_ = [[UINavigationController alloc] initWithRootViewController:director];
 	navigationController_.navigationBarHidden = YES;
 	
 	// set the Navigation Controller as the root view controller
@@ -74,7 +85,7 @@
 	CCScene *scene = [CCScene node];
 	[scene addChild: [nextAction() testWithSubTest:1 nodes:50]];
 	
-	[director pushScene:scene];
+	[director runWithScene:scene];
 		
 	return YES;
 }
